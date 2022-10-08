@@ -26,17 +26,18 @@
 <script>
 	var outs = [
 		"repo-m6Cgng-lock  repo-7Mvxxg-lock  ..  .",
-		"/var/tmp/pamac-build-oleg/qtcreator-git/src/qt-creator/tests/unit/unittest:<br>.<br>..",
-		"/var/tmp/pamac-build-oleg/qtcreator-git/src/qt-creator/tests/system/suite_tools/tst_sort/testdata:<br>.  ..  sorted.txt  unsorted.txt",
+		"/var/tmp/pamac-build-admin/qtcreator-git/src/qt-creator/tests/unit/unittest:<br>.<br>..",
+		"/var/tmp/pamac-build-admin/qtcreator-git/src/qt-creator/tests/system/suite_tools/tst_sort/testdata:<br>.  ..  sorted.txt  unsorted.txt",
 		"/proc/1622/task/1673/net/dev_snmp6:<br>.  ..  enp2s0  lo  wlp3s0",
-		"/var/tmp/flatpak-cache-HBZOS1:<br>",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
+		"/usr/share/makepkg/lint_pkgbuild:<br>variable.sh  pkgname.sh                    optdepends.sh   conflicts.sh      ..",
+		"/usr/share/man/de/man7:<br>qt5options.7.gz  kf5options.7.gz  ..  .",
+		"/usr/share/licenses/eglexternalplatform:<br>COPYING  ..  .",
+		"/usr/lib/python3.10/config-3.10-x86_64-linux-gnu/__pycache__:<br>python-config.cpython-310.pyc        python-config.cpython-310.opt-1.pyc  .",
+		"/usr/lib/python3.10/curses:<br>textpad.py  __pycache__  panel.py  __init__.py  has_key.py  ascii.py  ..  .",
+		"/usr/lib/modules/5.15.65-1-MANJARO/build/drivers/media/test-drivers/vicodec:<br>Kconfig  ..  .",
+		"/usr/lib/modules/5.15.65-1-MANJARO/build/drivers/net/ethernet/chelsio/inline_crypto:<br>Kconfig  ..  .",
+		"/home/admin/.cache/mozilla/firefox/3rzge5kw.default-release/cache2/doomed:<br>.  ..",
+		"/home/admin/.local/share/icons/Tela/scalable:<br>.  ..  apps  devices  mimetypes  places",
 	];
 	var height = 40;
 	var field = Array(height);
@@ -59,7 +60,7 @@
 	setInterval(() => {
 		field.shift();
 		field.push(randFromArray(outs));
-		document.getElementById("field").innerHTML = field.join("<br>");
+		document.getElementById("field").innerHTML = field.join("<br><br>");
 	}, 10);
 </script>
 </html>
